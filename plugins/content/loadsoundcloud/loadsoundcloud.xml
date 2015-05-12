@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content">
+	<name>Content - Load Soundcloud</name>
+	<author>Nordmograph</author>
+	<creationDate>May 2011</creationDate>
+	<copyright>Copyright (C) 2010 - 2014 Nordmograph. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>contact@nordmograph.com</authorEmail>
+	<authorUrl>www.nordmograph.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Insert a Soundcloud player (single track or playlist) in your article using a simple tag and the player url. 3 modus operandi available. The one without any tag around the Soundcloud url would require a space at the end of url for the player to work and replace the url. Watch your editor doesn't add a p tag or anything.</description>
+	<files>
+		<filename plugin="loadsoundcloud">loadsoundcloud.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			<field name="mode" type="radio" default="1" width="400" label="Modus operandi" description="Select the way you want Soundcloud to be replaced byt the player.">
+					<option value="1">{https://soundcloud.com/me/mysong}</option>
+					<option value="2">https://soundcloud.com/me/mysong</option>
+					<option value="3">{soundcloud https://soundcloud.com/me/mysong}</option>
+				</field>
+				<field name="player_height" type="text" default="200" label="Player Height" description="" />
+				<field name="visual" type="radio" default="1" label="Enable Visual Player" description="" class="radio btn-group btn-group-yesno">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="auto_play" type="radio" default="0" label="Auto Play" description="This is not recommended as you could have more than one player per page" class="radio btn-group btn-group-yesno">
+					<option value="0">JNo</option>
+					<option value="1">Yes (not recommended)</option>
+				</field>
+				<field name="show_comments" type="radio" default="1" label="Show Comments" description="" class="radio btn-group btn-group-yesno">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="show_artwork" type="radio" default="1" label="Show Artwork" description="" class="radio btn-group btn-group-yesno">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="show_description" type="radio" default="1" label="Show Description" description="" class="radio btn-group btn-group-yesno">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="color" type="color" default="#3B5998" label="Color" description="color hexadecimal code" />
+		
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+    <name>Hippo Shortcode Plugin</name>
+    <author>ThemeHippo.com</author>
+    <creationDate>Feb 2014</creationDate>
+    <copyright>Copyright (C) 2013 - 2014 ThemeHippo. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GPLv2 or later</license>
+    <authorEmail>themehippo@gmail.com</authorEmail>
+    <authorUrl>www.themehippo.com</authorUrl>
+    <version>1.0.0</version>
+    <description>BBCode style Shortcode supporting for Joomla Contents and Module by ThemeHippo.com</description>
+
+
+    <files>
+        <filename plugin="hipposhortcode">hipposhortcode.php</filename>
+        <filename plugin="hipposhortcode">index.html</filename>
+        <filename plugin="hipposhortcode">helper.php</filename>
+        <folder plugin="hipposhortcode">core</folder>
+        <folder plugin="hipposhortcode">hippo-shortcodes</folder>
+    </files>
+
+
+</extension>

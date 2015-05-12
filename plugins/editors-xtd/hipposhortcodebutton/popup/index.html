@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Hippo Shortcode list</title>
+
+	<!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+-->
+
+<!-- Included CSS Files (Compressed) -->
+<link rel="stylesheet" href="stylesheets/foundation.min.css">
+<link rel="stylesheet" href="stylesheets/app.css">
+
+<script src="javascripts/modernizr.foundation.js"></script>
+</head>
+<body>
+
+	<div class="row">
+		<div class="six columns">
+			<h2>Hippo Shortcodes</h2>
+		</div>
+		<div class="six columns">
+			<h5 class="text-right" style="margin-top:35px;"></h5>
+		</div>
+		<hr />
+	</div>
+
+	<div class="row">
+		<div class="three columns">
+			<dl class="vertical tabs">
+				<dd class="active"><a href="#vertical1">Grid / Column</a></dd>
+				<dd><a href="#vertical2">Video</a></dd>
+				<dd><a href="#vertical3">Tab</a></dd>
+				<dd><a href="#vertical4">Icons</a></dd>
+				<dd><a href="#vertical5">Accordion</a></dd>
+				<dd><a href="#vertical6">Counter</a></dd>
+
+			</dl>
+		</div>
+
+		<div class="nine columns">
+			<ul class="tabs-content">
+
+				<!-- Grid / Column --> 
+				<li class="active" id="vertical1Tab">
+					<img src="shortcode-preview/column.png" alt="" />  <!--  700px x 150px -->
+
+					<div class="pt">Bootstrap 3 based grid. This Shortcode will produce three Columns</div>
+
+<textarea onclick="this.focus();this.select()" style="height:120px;"
+>[hippo-row id="" class=""]
+
+[hippo-column class="col-md-4"] 
+
+...
+
+[/hippo-column]
+
+[hippo-column class="col-md-4"] 
+
+...
+
+[/hippo-column]
+
+[hippo-column class="col-md-4"] 
+
+...
+
+[/hippo-column]
+
+[/hippo-row]</textarea>
+
+					<div class="bt">Visit <a href="http://getbootstrap.com/css/#grid" target="_blank">bootstrap grid for more info</a></div>
+
+					<div class="pt">This Shortcode will produce two Columns with various widths</div>
+
+<textarea onclick="this.focus();this.select()" style="height:100px;">[hippo-row id="" class=""]
+[hippo-column class="col-md-3"] 
+
+...
+
+[/hippo-column]
+[hippo-column class="col-md-9"] 
+
+...
+
+[/hippo-column]
+[/hippo-row]</textarea>
+
+
+</li>
+
+
+
+					<!-- Videos -->
+					<li id="vertical2Tab">
+						<img src="shortcode-preview/video.png" alt="" />
+
+						<div class="pt">This Shortcode will produce a youtube Video</div>
+
+						<textarea onclick="this.focus();this.select()">[hippo-video height="400" width="800"] http://youtu.be/5Q7eLgU6NOk [/hippo-video]</textarea>
+
+						<div class="bt">Example: http://youtu.be/5Q7eLgU6NOk OR http://www.youtube.com/watch?v=5Q7eLgU6NOk</div>
+
+
+						<div class="pt">This Shortcode will produce a vimeo Video</div>
+
+						<textarea onclick="this.focus();this.select()">[hippo-video height="400" width="800"] http://vimeo.com/86295452 [/hippo-video]</textarea>
+
+						<div class="bt">
+							Example: http://vimeo.com/86295452
+						</div>
+					</li>
+
+
+
+
+
+					<!-- TAbs -->
+					<li id="vertical3Tab">
+						<img src="shortcode-preview/tab.png" alt="" />
+						<div class="pt">This shortcode will make 3 tab in top</div>
+<textarea onclick="this.focus();this.select()">[hippo-tabs id="" class="th-top-nav"]
+
+[hippo-tab-item title="Tab1" id="th-tab1" selected="yes" class=""]
+...
+[/hippo-tab-item]
+
+[hippo-tab-item title="Tab2" id="th-tab2" selected="no" class=""]
+...
+[/hippo-tab-item]
+
+[hippo-tab-item title="Tab3" id="th-tab3" selected="no" class=""]
+...
+[/hippo-tab-item]
+
+[/hippo-tabs]</textarea>
+
+							<div class="bt">
+								Options: <br>
+								"th-top-nav" class in "hippo-tabs" will make top positioned tab. <br>
+								selected="yes" in "hippo-tab-item" shortcode will make default opened tab item.<br>
+								all "id" of "hippo-tab-item" should unique value.<br>
+								"tabs-left" class in "hippo-tabs" will make left positioned tab. <br>
+								"tabs-right" class in "hippo-tabs" will make right positioned tab. 
+
+							</div>
+
+
+						</li>
+
+
+
+						<!-- Icon -->
+						<li id="vertical4Tab">
+
+							<img src="shortcode-preview/icon.png" alt="" />
+							<div class="pt">This Shortcode will show a FontAwesome Icon</div>
+							<textarea onclick="this.focus();this.select()">[hippo-faicon name="camera" size="40" color="" class=""]</textarea>
+
+							<div class="bt">Options: <br>
+
+								"name" is icon name <br>
+								"size" is icon size in pixel <br>
+								"color" is color name or color code <br>
+
+							</div>
+						</li>      
+
+
+
+
+
+						<!-- Accordion -->
+						<li id="vertical5Tab">
+
+							<img src="shortcode-preview/accordion.png" alt="" />
+
+							<div class="pt">This Shortcode will produce a Accordions</div>
+
+<textarea onclick="this.focus();this.select()">[hippo-accordions id="" class=""] 
+
+[hippo-accordion-item title="Item 1" id="th-item1" open="yes" class=""] 
+...
+[/hippo-accordion-item] 
+
+[hippo-accordion-item title="Item 2" id="th-item2" open="no" class=""] 
+...
+[/hippo-accordion-item] 
+
+[hippo-accordion-item title="Item 3" id="th-item3" open="no" class=""] 
+...
+[/hippo-accordion-item] 
+
+[/hippo-accordions]</textarea>
+
+								<div class="bt">Options: <br>
+
+									"open" in "hippo-accordion-item" shortcode is opened item. <br>
+									"title" in "hippo-accordion-item" shortcode is accordion item title. <br>
+									"id" in "hippo-accordion-item" shortcode is accordion item id and should UNIQUE value. <br>
+
+								</div>
+							</li>
+
+
+<!-- Counter -->
+						<li id="vertical6Tab">
+
+							<img src="shortcode-preview/counter.png" alt="" />
+
+							<div class="pt">This Shortcode will produce a incremental counter</div>
+
+<textarea onclick="this.focus();this.select()">[hippo-counter from="0" to="1000" speed="1000" refresh="100" class="custom-class"]</textarea>
+
+								<div class="bt">Options: <br>
+
+									"from" in "hippo-counter" shortcode is starting point. <br>
+									"to" in "hippo-counter" shortcode is counter stop point. <br>
+									"speed" in "hippo-counter" is counter incremental speed. <br>
+									"refresh" in "hippo-counter" is counter refresh interval. <br>
+									"class" in "hippo-counter" is custom css class name. <br>
+
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+
+
+
+
+				<!-- Included JS Files (Compressed) -->
+				<script src="javascripts/foundation.min.js"></script>
+
+				<!-- Initialize JS Plugins -->
+				<script src="javascripts/app.js"></script>
+
+
+			</body>
+			</html>

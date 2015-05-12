@@ -1,0 +1,46 @@
+.productdetails-view .PricesalesPrice {
+  color: #4c3442;
+}
+.css-productdetails-tab .nav-tabs li.active a:before {
+  border-top-color: #4c3442;
+}
+span.addtocart-button input.addtocart-button,
+a.ask-a-question:hover,
+.css-productdetails-tab .nav-tabs li a:hover,
+.back-to-category a:hover,
+.css-product .btn-primary,
+.css-product input.addtocart-button,
+button#checkoutFormSubmit,
+.css-coupon input.details-button,
+.css-shop-regform .buttonBar-right button.button,
+.product-neighbours a.previous-page,
+.product-neighbours a.next-page,
+.write-reviews .highlight-button,
+#fancybox-content a.continue_link,
+#fancybox-content a.showcart {
+  background: #4c3442 !important;
+}
+.css-product h3:hover a,
+span.addtocart-button input.addtocart-button:hover,
+.productdetails-view .notify.btn:hover,
+.icons a:hover:before,
+.t3-sidebar .vmgroup .vmproduct h3 a:hover,
+.t3-sidebar .VMmenu li a:hover,
+input.css-currency-submit:hover,
+.t3-sidebar ul.vmmanufacturer li a:hover,
+.css-vmshop-customer-login div > a:hover,
+.css-vm-newuser .vm-continue-shopping .continue_link:hover,
+.product-neighbours a.previous-page:hover,
+.product-neighbours a.next-page:hover {
+  color: #4c3442;
+}
+#fancybox-content a.continue_link:hover,
+#fancybox-content a.showcart:hover,
+.css-shop-regform .buttonBar-right button.button:hover {
+  background: #3d2a35 !important;
+}
+a {
+  -webkit-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}

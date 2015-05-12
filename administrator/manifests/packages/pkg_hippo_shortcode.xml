@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="1.0">
+	<name>Hippo Shortcode Package</name>
+	<author>Theme Hippo</author>
+	<creationDate>Oct 2014</creationDate>
+	<packagename>hippo_shortcode</packagename>
+	<version>1.0.0</version>
+	<url>http://www.themehippo.com/</url>
+	<packager>Theme Hippo</packager>
+	<packagerurl>http://www.themehippo.com/</packagerurl>
+	<description>Shortcode Package to combine shortcode main and editor plugin</description>
+	<files folder="packages">
+		<file type="plugin" id="hippo_shortcode" group="system">plg_sys_hipposhortcode.zip</file>
+		<file type="plugin" id="hippo_shortcode" group="editors-xtd">plg_xtd_hipposhortcodebutton.zip</file>
+	</files>
+</extension>

@@ -1,0 +1,9 @@
+.th-box,
+.th-page-header,
+.margin-right-wrapper,
+.margin-left-wrapper,
+.th-box-wrapper,
+.t3-mainnav {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}

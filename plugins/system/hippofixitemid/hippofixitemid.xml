@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>Hippo Fix Item ID</name>
+	<author>ThemeHippo.com</author>
+    <creationDate>April 2014</creationDate>
+    <copyright>Copyright (C) 2013 - 2014 ThemeHippo. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GPLv2 or later</license>
+    <authorEmail>themehippo@gmail.com</authorEmail>
+    <authorUrl>www.themehippo.com</authorUrl>
+    <version>1.0.0</version>
+    <description>Remove ItemID from article url on specific menu.</description>
+	<files>
+		<filename plugin="hippofixitemid">hippofixitemid.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="removemenuitem1" type="menuitem" default="0" label="Select menu item 1" description="Select a specific menu item" />
+
+				<field name="removemenuitem2" type="menuitem" default="0" label="Select menu item 2" description="Select a specific menu item" />
+
+				<field name="removemenuitem3" type="menuitem" default="0" label="Select menu item 3" description="Select a specific menu item" />
+
+				<field name="removemenuitem4" type="menuitem" default="0" label="Select menu item 4" description="Select a specific menu item" />
+
+				<field name="removemenuitem5" type="menuitem" default="0" label="Select menu item 5" description="Select a specific menu item" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,21 @@
+.th-box,
+.th-page-header,
+.margin-right-wrapper,
+.margin-left-wrapper,
+.th-box-wrapper,
+.t3-mainnav {
+  -webkit-box-shadow: #212e3b 1px 1px, #212e3b 2px 2px, #212e3b 3px 3px, #212e3b 4px 4px, #212e3b 5px 5px, #212e3b 6px 6px, #212e3b 7px 7px, #212e3b 8px 8px, #212e3b 9px 9px, #212e3b 10px 10px, #212e3b 11px 11px, #212e3b 12px 12px, #212e3b 13px 13px, #212e3b 14px 14px, #212e3b 15px 15px, #212e3b 16px 16px, #212e3b 17px 17px, #212e3b 18px 18px, #212e3b 19px 19px, #212e3b 20px 20px, #212e3b 21px 21px, #212e3b 22px 22px, #212e3b 23px 23px, #212e3b 24px 24px, #212e3c 25px 25px, #212f3c 26px 26px, #212f3c 27px 27px, #222f3c 28px 28px, #222f3d 29px 29px, #222f3d 30px 30px, #22303d 31px 31px, #22303e 32px 32px, #22303e 33px 33px, #22303e 34px 34px, #23303e 35px 35px, #23313f 36px 36px, #23313f 37px 37px, #23313f 38px 38px, #23313f 39px 39px, #233140 40px 40px, #233240 41px 41px, #243240 42px 42px, #243241 43px 43px, #243241 44px 44px, #243241 45px 45px, #243341 46px 46px, #243342 47px 47px, #243342 48px 48px, #253342 49px 49px, #253442 50px 50px, #253443 51px 51px, #253443 52px 52px, #253443 53px 53px, #253444 54px 54px, #253544 55px 55px, #263544 56px 56px, #263544 57px 57px, #263545 58px 58px, #263545 59px 59px, #263645 60px 60px, #263645 61px 61px, #263646 62px 62px, #273646 63px 63px, #273646 64px 64px, #273747 65px 65px, #273747 66px 66px, #273747 67px 67px, #273747 68px 68px, #273748 69px 69px, #283848 70px 70px, #283848 71px 71px, #283848 72px 72px, #283849 73px 73px, #283949 74px 74px, #283949 75px 75px, #28394a 76px 76px, #29394a 77px 77px, #29394a 78px 78px, #293a4a 79px 79px, #293a4b 80px 80px, #293a4b 81px 81px, #293a4b 82px 82px, #293a4b 83px 83px, #2a3b4c 84px 84px, #2a3b4c 85px 85px, #2a3b4c 86px 86px, #2a3b4d 87px 87px, #2a3b4d 88px 88px, #2a3c4d 89px 89px, #2a3c4d 90px 90px, #2b3c4e 91px 91px, #2b3c4e 92px 92px, #2b3c4e 93px 93px, #2b3d4e 94px 94px, #2b3d4f 95px 95px, #2b3d4f 96px 96px, #2b3d4f 97px 97px, #2c3e50 98px 98px !important;
+  box-shadow: #212e3b 1px 1px, #212e3b 2px 2px, #212e3b 3px 3px, #212e3b 4px 4px, #212e3b 5px 5px, #212e3b 6px 6px, #212e3b 7px 7px, #212e3b 8px 8px, #212e3b 9px 9px, #212e3b 10px 10px, #212e3b 11px 11px, #212e3b 12px 12px, #212e3b 13px 13px, #212e3b 14px 14px, #212e3b 15px 15px, #212e3b 16px 16px, #212e3b 17px 17px, #212e3b 18px 18px, #212e3b 19px 19px, #212e3b 20px 20px, #212e3b 21px 21px, #212e3b 22px 22px, #212e3b 23px 23px, #212e3b 24px 24px, #212e3c 25px 25px, #212f3c 26px 26px, #212f3c 27px 27px, #222f3c 28px 28px, #222f3d 29px 29px, #222f3d 30px 30px, #22303d 31px 31px, #22303e 32px 32px, #22303e 33px 33px, #22303e 34px 34px, #23303e 35px 35px, #23313f 36px 36px, #23313f 37px 37px, #23313f 38px 38px, #23313f 39px 39px, #233140 40px 40px, #233240 41px 41px, #243240 42px 42px, #243241 43px 43px, #243241 44px 44px, #243241 45px 45px, #243341 46px 46px, #243342 47px 47px, #243342 48px 48px, #253342 49px 49px, #253442 50px 50px, #253443 51px 51px, #253443 52px 52px, #253443 53px 53px, #253444 54px 54px, #253544 55px 55px, #263544 56px 56px, #263544 57px 57px, #263545 58px 58px, #263545 59px 59px, #263645 60px 60px, #263645 61px 61px, #263646 62px 62px, #273646 63px 63px, #273646 64px 64px, #273747 65px 65px, #273747 66px 66px, #273747 67px 67px, #273747 68px 68px, #273748 69px 69px, #283848 70px 70px, #283848 71px 71px, #283848 72px 72px, #283849 73px 73px, #283949 74px 74px, #283949 75px 75px, #28394a 76px 76px, #29394a 77px 77px, #29394a 78px 78px, #293a4a 79px 79px, #293a4b 80px 80px, #293a4b 81px 81px, #293a4b 82px 82px, #293a4b 83px 83px, #2a3b4c 84px 84px, #2a3b4c 85px 85px, #2a3b4c 86px 86px, #2a3b4d 87px 87px, #2a3b4d 88px 88px, #2a3c4d 89px 89px, #2a3c4d 90px 90px, #2b3c4e 91px 91px, #2b3c4e 92px 92px, #2b3c4e 93px 93px, #2b3d4e 94px 94px, #2b3d4f 95px 95px, #2b3d4f 96px 96px, #2b3d4f 97px 97px, #2c3e50 98px 98px !important;
+}
+
+.sp_social ul li {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.sp_social ul li i.fa {
+  color: #fff;
+}
+.th-login #btl .btl-panel span i.fa {
+  -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
