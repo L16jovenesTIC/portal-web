@@ -1,0 +1,45 @@
+1liceodelcaribe.jpg|Colegio Liceo del Caraibe|
+1liceodelcaribe2.jpg|Colegio Liceo del Caribe|
+2colegiojoseallamano.jpg|Colegio Bilingüe José Allamano|
+2colegiojoseallamano1.jpg|Colegio Bilingüe José Allamano|
+3institutocrear2.jpg|Instituto Crear|
+3instutocrear1.jpg|Instituto Crear|
+4luisvargastejada1.jpg|I.E.D Luis Vargas Tejada|
+4luisvargastejada2.jpg|I.E.D Luis Vargas Tejada|
+5liceodelasamericas1.jpg|Liceo Avenida  las Américas|
+5liceodelasamericas2.jpg|Liceo Avenida las Américas|
+6colegiokapeirot1.jpg|Colegio Kapeirot|
+6colegiokapeirot2.jpg|Colegio Kapeirot|
+6colegiokapeirot3.jpg|Colegio Kapeirot|
+7colegiosantaisabeldehungria1.jpg|Colegio Parroquial Bilingüe Santa Isabel de Hungría|
+7colegiosantaisabeldehungria2.jpg|Colegio Parroquial Bilingüe Santa Isabel de Hungría|
+8colegioantoniojosedesucre1.jpg|I.E.D. Antonio José de Sucre|
+8colegioantoniojosedesucre2.jpg|I.E.D. Antonio José de Sucre|
+9colegiosilveriaespinosa1.jpg|I.E.D. Silveria Espinosa|
+10marcoantoniocarreo.jpg|I.E.D. Marco Antonio Carreno|
+11colegiosantaemilia1.jpg|Colegio Santa Emilia|
+11colegiosantaemilia2.jpg|Colegio Santa Emilia|
+12colegionemjamisnherrera1.jpg|I.E.D. Benjamín Herrera|
+12colegionemjamisnherrera2.jpg|I.E.D  Benjamín Herrera|
+13colegiojosejoaquincasas1.jpg|I.E.D. José Joaquín Casas|
+13colegiojosejoaquincasas2.jpg|I.E.D.  José Joaquín Casas|
+14colegioculturapopular1.jpg|I.E.D. Cultura Popular|
+14colegioculturapopular2.jpg|I.E.D. Cultura Popular|
+15colegiosorrento1.jpg|I.E.D. Sorrento|
+15colegiosorrento2.jpg|I.E.D. Sorrento|
+16colegiolamerced1.jpg|I.E.D. La Merced|
+16colegiolamerced2.jpg|I.E.D. La Merced|
+17colegioandresbello1.jpg|I.E.D. Andrés Bello|
+17colegioandresbello2.jpg|I.E.D. Andrés Bello|
+18colecristianosemilladevida1.jpg|Colegio Cristiano Semilla de Vida|
+18colecristianosemilladevida2.jpg|Colegio Cristiano Semilla de Vida|
+19colegiojazmin.jpg|I.E.D. El Jazmin|
+20colrosario.jpg|Colegio Nuestra Senora del Rosario|
+20colrosario1.jpg|Colegio Nuestra Senora del Rosario|
+21coljosemanuelrestrepo1.jpg|I.E.D. José Manuel Restrepo|
+21coljosemanuelrestrepo2.jpg|I.E.D. José Manuel Restrepo|
+22coljuliogaravito1.jpg|I.E.D. Julio Garavito Armero|
+22coljuliogaravito2.jpg|I.E.D. Julio Garavito Armero|
+23colluiscarlosgalan1.jpg|I.E.D. Luis Carlos Galán Sarmiento|
+23colluiscarlosgalan2.jpg|I.E.D. luis Carlos Galán Sarmiento|
+24colluisconchacordoba1.jpg|Colegio Luís Concha Cordoba|

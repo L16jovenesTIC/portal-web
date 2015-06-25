@@ -1,0 +1,760 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"new",
+				"new_id"
+			],
+			[
+				"G",
+				"Guardado"
+			],
+			[
+				"si",
+				"siblings	.siblings()"
+			],
+			[
+				"pa",
+				"parent  (function)"
+			],
+			[
+				"a",
+				"attr  (function)"
+			],
+			[
+				"on",
+				"on  (function)"
+			],
+			[
+				"ty",
+				"type=\"button"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"curs",
+				"cursor:   (property)"
+			],
+			[
+				"typ",
+				"type='submit"
+			],
+			[
+				"cli",
+				"click"
+			],
+			[
+				"TBcon",
+				"TBconcentra"
+			],
+			[
+				"cod",
+				"codeco  (variable)"
+			],
+			[
+				"TBca",
+				"TBcaracteristicas"
+			],
+			[
+				"TB",
+				"TBcodificacion"
+			],
+			[
+				"TBc",
+				"TBcodificacion"
+			],
+			[
+				"str",
+				"strong"
+			],
+			[
+				"fra",
+				"fraccionabilidad"
+			],
+			[
+				"id_co",
+				"id_nomcomercial"
+			],
+			[
+				"label",
+				"label_mezcla"
+			],
+			[
+				"c",
+				"ccs"
+			],
+			[
+				"id_",
+				"id_concentra_mezcla\",\"sql"
+			],
+			[
+				"id_con",
+				"id_concentra"
+			],
+			[
+				"id",
+				"idpa_o_mezcla  (variable)"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"log",
+				"logQuery"
+			],
+			[
+				"SE",
+				"SESSION"
+			],
+			[
+				"que",
+				"query"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"id_pa",
+				"id_pa_mezcla"
+			],
+			[
+				"idcon",
+				"idconcentra_o_mezcla"
+			],
+			[
+				"ven",
+				"venregsan"
+			],
+			[
+				"pres",
+				"prescom"
+			],
+			[
+				"id_pres",
+				"id_prescom"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"arra",
+				"array	$… = array (…)"
+			],
+			[
+				"mysqli_re",
+				"mysqli_real_escape_string  (function)"
+			],
+			[
+				"con",
+				"consecutivo"
+			],
+			[
+				"sql",
+				"sql_maestra  (variable)"
+			],
+			[
+				"su",
+				"submit"
+			],
+			[
+				"add",
+				"addClass  (function)"
+			],
+			[
+				"remo",
+				"removeClass  (function)"
+			],
+			[
+				"php",
+				"phpinfo"
+			],
+			[
+				"addda",
+				"adddatdis"
+			],
+			[
+				"para",
+				"paralelo"
+			],
+			[
+				"ms",
+				"msg"
+			],
+			[
+				"codi",
+				"codigo"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"array",
+				"array"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"em",
+				"empaque_cant"
+			],
+			[
+				"attr",
+				"attr	.attr() - single"
+			],
+			[
+				"att",
+				"attr	.attr() - multiple"
+			],
+			[
+				"loa",
+				"loading"
+			],
+			[
+				"T",
+				"TBpa"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"li",
+				"link"
+			],
+			[
+				"C",
+				"class	Attr"
+			],
+			[
+				"whr",
+				"whrmz"
+			],
+			[
+				"te",
+				"text	.text()"
+			],
+			[
+				"div",
+				"divtabresult"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"num",
+				"numres"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"sl",
+				"slideDown	.slideDown()"
+			],
+			[
+				"di",
+				"divmsg"
+			],
+			[
+				"en",
+				"endif"
+			],
+			[
+				"is_n",
+				"is_numeric"
+			],
+			[
+				"sli",
+				"slideUp	.slideUp()"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"frm",
+				"frmbuscodeco"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 180.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"form",
+				"Snippet: bs3-form"
+			],
+			[
+				"mod",
+				"Snippet: bs3-modal"
+			],
+			[
+				"navbar",
+				"Snippet: bs3-navbar"
+			],
+			[
+				"bran",
+				"Snippet: bs3-navbar-brand"
+			],
+			[
+				"in",
+				"Snippet: bs3-input-date"
+			],
+			[
+				"hidd",
+				"Snippet: bs3-input-hidden"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"linter",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"pac",
+				"Package Control: Enable Package"
+			],
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"sb3 che",
+				"Snippet: bs3-input-checkbox"
+			],
+			[
+				"bs3 input t",
+				"Snippet: bs3-input-text-h"
+			],
+			[
+				"bs3 input tex",
+				"Snippet: bs3-input-text"
+			],
+			[
+				"bs3 table",
+				"Snippet: bs3-table-striped"
+			],
+			[
+				"bs3 ico",
+				"Snippet: bs3-icon-glyphicon"
+			],
+			[
+				"bs3 gly",
+				"Snippet: bs3-glyphicon"
+			],
+			[
+				"bs3 blo",
+				"Snippet: bs3-block-button-info"
+			],
+			[
+				"bs3 bu",
+				"Snippet: bs3-lg-button-info"
+			],
+			[
+				"bs3",
+				"Snippet: bs3-alert-danger"
+			],
+			[
+				"bs3-se",
+				"Snippet: bs3-select-h"
+			],
+			[
+				"bs3-f",
+				"Snippet: bs3-form-inline"
+			],
+			[
+				"bs3-ta",
+				"Snippet: bs3-table-condensed"
+			],
+			[
+				"bs3-tabl",
+				"Snippet: bs3-table-responsive"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 173.0,
+		"history":
+		[
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"jsbeautify",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/larsul/Dropbox/WORK/svr/html/suall/backend"
+	],
+	"file_history":
+	[
+		"/mnt/DATOS/svr/www/localhost/ecopetrol/codificacion/css/codeco.css",
+		"/mnt/DATOS/svr/www/localhost/ecopetrol/codificacion/inc/varcodeco.php",
+		"/home/larsul/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+		"/mnt/DATOS/svr/www/localhost/ecopetrol/codificacion/status.php",
+		"/mnt/DATOS/svr/www/localhost/ecopetrol/codificacion/jx/proclogin.php",
+		"/mnt/DATOS/svr/www/localhost/ecopetrol/codificacion/index.html",
+		"/home/larsul/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/larsul/.config/sublime-text-3/Packages/Javascript Beautify/Default (Linux).sublime-keymap",
+		"/home/larsul/.config/sublime-text-3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/home/larsul/.config/sublime-text-3/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/mnt/DATOS/svr/www/localhost/phpinfo.php",
+		"/mnt/COMPARTIDA/UD/Telematica II/Laboratorio/01.practica Python/p01.py",
+		"/home/larsul/.config/sublime-text-3/Packages/Alignment/Default (Linux).sublime-keymap",
+		"/home/larsul/.config/sublime-text-3/Packages/Alignment/Base File.sublime-settings",
+		"/mnt/DATOS/LVWIN/Ecopetrol Codificacion medicamentos/consultas3.sql",
+		"/mnt/DATOS/LVWIN/Ecopetrol Codificacion medicamentos/consultas2.sql",
+		"/home/larsul/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/larsul/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/mnt/DATOS/svr/www/localhost/ecopetrol/codificacion/inc/fcnscodeco.php",
+		"/mnt/DATOS/svr/www/localhost/ecopetrol/codificacion/logout.php",
+		"/home/larsul/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/larsul/.config/sublime-text-3/Packages/SublimeLinter/Default (Linux).sublime-keymap",
+		"/mnt/DATOS/svr/www/localhost/ecopetrol/codificacion/inc/login.html",
+		"/mnt/DATOS/svr/www/localhost/ecopetrol/codificacion/js/main.js",
+		"/mnt/DATOS/svr/www/localhost/ecopetrol/codificacion/js/codecov.js",
+		"/mnt/DATOS/svr/www/localhost/ecopetrol/codificacion/cnxsvrcodeco.php",
+		"/mnt/DATOS/svr/www/localhost/ecopetrol/codificacion/js/plugins.js",
+		"/home/larsul/.config/sublime-text-3/Packages/User/php.sublime-build",
+		"/home/larsul/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/mnt/DATOS/svr/www/localhost/index.html",
+		"/mnt/DATOS/svr/www/localhost/www2/exel.php",
+		"/tmp/sublime-sftp-browse-1407835741/MyDomain/public_html/ecomunidad/recypuntos/web/V0.3/cnxsrv.php",
+		"/home/larsul/.config/sublime-text-3/Packages/User/sftp_servers/MyDomain"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/mnt/DATOS/svr/www/localhost/ecopetrol/codificacion/",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"TBcomercializador",
+			"Pos",
+			"LME",
+			"CodigoCUM",
+			"CodigoBarras",
+			"Proveedor (Laboratorio)",
+			"RegInvima",
+			"empaque_cant",
+			"NombreComercial",
+			"NomUnidadMedida",
+			"href=",
+			"TB",
+			"divfrmedt",
+			"frmedtclsinvima",
+			"edtclsinvima",
+			"terminos",
+			"frmmodedt",
+			"edt",
+			"trm2bus",
+			"frmedtclsinvima",
+			"h4",
+			"t",
+			"whrpa",
+			"$tipo",
+			"tipo",
+			"divtabresult",
+			"button",
+			"buscodeco",
+			"divfrm",
+			"lnkbuscar",
+			"regsan",
+			"_maestra",
+			"sql_maestra",
+			"maestra",
+			"val_id_concentra_o_mezcla",
+			"'CUM'",
+			"CUM",
+			"CodigoCUM",
+			"json2tab",
+			"var",
+			"TBmaestra",
+			"id_concentra_mezcla",
+			"$sql",
+			"sql",
+			"_GET",
+			"'",
+			"fraccionabilidad",
+			"paralelo",
+			"id_via_admon",
+			"venregsan",
+			"label_concentra",
+			"id_titregsan",
+			"label_concentra",
+			"label_mezcla",
+			"_GET",
+			"idconcentra_o_mezcla",
+			"idpa_o_mezcla",
+			"$idpa_o_mezcla",
+			"id_pa_mezcla",
+			"$pa",
+			"$pas",
+			"pas",
+			"idpa_o_mezcla",
+			"id_clsinvima",
+			"$_GET",
+			"'",
+			"val_idpa_o_mezcla",
+			"consecutivo",
+			"id_ff",
+			"empaque_cant",
+			"id_empaque",
+			"envase_cant",
+			"id_envase",
+			"conect_db",
+			"  ",
+			"val_prescom",
+			"vars",
+			"consecutivo",
+			"Editar",
+			"  ",
+			"     ",
+			"    ",
+			"   ",
+			"  ",
+			"USS2014",
+			"adddatdis",
+			"Dispensacion",
+			"adddatreg",
+			"Registro",
+			"titregsan",
+			"clsinvima",
+			"prcaddins",
+			"prcresbus",
+			"codeco",
+			"pa",
+			"idpa_o_mezcla",
+			"id_ff",
+			"id_clsinvima",
+			"resbus.php",
+			":",
+			"'",
+			"\"",
+			"Envase",
+			"envase",
+			"ff",
+			"id_clsinvima",
+			"consecutivo",
+			"Consecutivo",
+			"consecutivo",
+			"idot",
+			"frmaddordtrb",
+			"dias_disp_mce",
+			"fraccionabilidad",
+			"adddatdis",
+			"alto_costo",
+			"LME",
+			"fraccionabilidad",
+			"id_uniminfarma",
+			"adddatbas",
+			"\"input\"",
+			"input",
+			"addclsinv",
+			"concentra",
+			"Concentra",
+			"concentra",
+			"connes",
+			"terminos",
+			"pa"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"validConcentraMezcla",
+			"id_concentra_o_mezcla",
+			"id_pa_o_mezcla",
+			"validPaMezcla",
+			"conectDB",
+			"    ",
+			"valPresCom",
+			"    ",
+			"procbuscar",
+			"id_uniminff",
+			"",
+			"['CODECO']"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 112.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "backend_suall.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Package Control Messages"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

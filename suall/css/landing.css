@@ -1,0 +1,201 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+html,body { 
+  margin:0; 
+  padding:0; 
+  height:100%; 
+  width:100%; 
+  text-align: center
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.hidediv {
+  display: none;
+}
+
+.img-over{
+    display: none;
+}
+
+.divspan100px{
+  padding-top: 100px;
+}
+.padtop10{
+  padding-top: 10px;
+}
+.padtop20{
+  padding-top: 20px;
+}
+.padtop30{
+  padding-top: 30px;
+}
+
+
+.bg-intro-1{
+  background-image: url('../img/bg/bg_intro_01.jpg');
+  min-height: 900px;
+}
+
+.bg-intro-2{
+  background-image: url('../img/bg/bg_intro_02.jpg');
+}
+
+.bg-intro-3{
+  background-image: url('../img/bg/bg_intro_03.jpg');
+  min-height: 900px;
+  text-align: left;
+}
+
+.bg-intro-31{
+  background-image: url('../img/bg/bg_intro_031.jpg');
+  min-height: 274px;
+}
+.bg-intro-32{
+  background-image: url('../img/bg/bg_intro_032.jpg');
+  text-align: left;
+}
+
+.bg-menu-intro{
+  background-image: url('../img/bg/bg_menu_intro.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 298px;
+}
+
+.bg-reglamento{
+  background-image: url('../img/bg/bg_ladrillos_movil.jpg');
+  color: #FFFFFF;
+  font-size: 1.3em;
+  text-shadow: 2px 2px #000;
+  text-align: justify;
+}
+
+
+.div-trailer{
+  color: #FFFFFF;
+  font-size: 1.2em;
+  text-shadow: 1px 1px #000;
+  font-weight: 900;
+}
+
+.lnk-ver-trailer{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.lnk-ver-trailer:hover{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.4em;
+}
+
+.vertrailer-icon{
+  padding: 30px 0;
+  text-align: center;
+}
+
+.vertrailer-icon img{
+  display: inline;
+}
+
+.vertrailer-icon img.img-over{
+    display: none;
+}
+
+
+.infotrailer{
+  border-left: 2px solid #FFF;
+  padding: 10px 20px;
+  text-align: justify;
+}
+
+.paginador{
+  padding-top: 150px;
+}
+
+.creditos{
+  padding: 60px 0 0;
+}
+
+
+.gestoras{
+  padding-top: 10px;
+}
+
+.logofooter{
+  padding: 15px 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.modal-content {
+  background-color: #17bdd0;
+  border: 1px solid #999;
+  border: 1px solid rgba(23, 189, 208, .2);
+  color: #fff;
+  -webkit-box-shadow: 0 3px 9px rgba(255, 255, 255, .5);
+          box-shadow: 0 3px 9px rgba(255, 255, 255, .5);
+}
+
+.modal-header {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.modal-title {
+    margin: 10px;
+}
+
+@media (min-width: 768px) {
+  .icon-store {
+    padding-top: 30px
+  }
+  .vertrailer{
+    padding: 50px 0;
+  }
+  .div-space{
+    min-height: 200px;
+  }
+  .iconos-retos{
+    padding-top: 60px;
+  }
+  .creditos{
+    padding-top: 50px
+  }
+  .gestoras{
+    padding-top: 10px;
+  }
+
+  .bg-reglamento{
+    background-image: url('../img/bg/bg_ladrillos_web.jpg');
+  }
+}
+
+@media (min-width: 992px) {
+  .div-space{
+    min-height: 300px;
+  }
+  .creditos{
+    padding-top: 50px
+  }
+}
+
+@media (min-width: 1200px) {
+  .creditos{
+    padding-top: 30px
+  }
+}
