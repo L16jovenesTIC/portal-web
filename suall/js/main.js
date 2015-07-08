@@ -1,4 +1,4 @@
-var urlBackend = "/backend";
+var urlBackend = "../backend";
 
 /**
  * [objjugsuall description]
@@ -150,8 +150,7 @@ function statusChangeCallback(response) {
   $('.btnfblog').hide();
 
   if (response.status === 'connected') {
-    // Logged into your app and Facebook.
-    // testAPI();
+    console.log("Usuario conectado");
     verifUserReg();
     $('.divbtnfb').hide();
     $('.divbtnjug').show();
@@ -173,16 +172,6 @@ function statusChangeCallback(response) {
 
     console.log(response.status);
   }
-}
-
-// Here we run a very simple test of the Graph API after login is
-// successful.  See statusChangeCallback() for when this call is made.
-function testAPI() {
-  console.log('Welcome!  Fetching your information.... ');
-  FB.api('/me', function(response) {
-    console.log('Successful login for: ' + response.name);
-    console.log('link: '+response.link)
-  });
 }
 
 function verifUserReg() {
@@ -304,12 +293,12 @@ function regNewUser() {
 $('.btnfblog').click(function(event) {
   event.preventDefault();
   // checkLoginState();
-  FB.login(function(response) {
-    statusChangeCallback(response);
-  }, {
-    scope: 'public_profile,email,user_friends',
-    return_scopes: true
-  })
+  // FB.login(function(response) {
+  //   statusChangeCallback(response);
+  // }, {
+  //   scope: 'public_profile,email,user_friends',
+  //   return_scopes: true
+  // })
 });
 
 $('.divbtnjug').click(function(event) {

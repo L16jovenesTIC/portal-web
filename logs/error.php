@@ -92,3 +92,5 @@
 2015-06-17T05:39:22+00:00	INFO 91.200.12.50	joomlafailure	Username and password do not match or you do not have an account yet.
 2015-06-23T22:28:46+00:00	INFO 186.80.96.6	joomlafailure	Username and password do not match or you do not have an account yet.
 2015-06-25T14:20:36+00:00	INFO 186.80.96.6	joomlafailure	Username and password do not match or you do not have an account yet.
+2015-07-06T18:23:21+00:00	INFO 186.80.248.236	joomlafailure	Username and password do not match or you do not have an account yet.
+2015-07-06T22:06:40+00:00	INFO 186.31.2.51	joomlafailure	Username and password do not match or you do not have an account yet.
