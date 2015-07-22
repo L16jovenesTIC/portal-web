@@ -1,22 +1,23 @@
 <?php
-/*------------------------------------------------------------------------
+/*
 # News Show SP2 - News display/Slider module by JoomShaper.com
-# ------------------------------------------------------------------------
 # Author    JoomShaper http://www.joomshaper.com
-# Copyright (C) 2010 - 2013 JoomShaper.com. All Rights Reserved.
-# @license - GNU/GPL V2 for PHP files. CSS / JS are Copyrighted Commercial
+# Copyright (C) 2010 - 2015 JoomShaper.com. All Rights Reserved.
+# @license - GNU/GPL V2 or later
 # Websites: http://www.joomshaper.com
--------------------------------------------------------------------------*/
+*/
 
 // no direct access
 defined('_JEXEC') or die('Restricted access');
-JHtml::_('behavior.framework', true);
 $doc 								= JFactory::getDocument();
+
 //Basic
 $moduleclass_sfx 					= $params->get('moduleclass_sfx');
+$layout 							= $params->get('layout', 'default');
 $moduleName         				= basename(dirname(__FILE__));
 $uniqid								= ($params->get('uniqid')=="") ? $module->id : $params->get('uniqid');
 $content_source						= $params->get('content_source');
+
 //Article Layout
 $article_column						= $params->get('article_column');
 $article_row						= $params->get('article_row');
@@ -47,16 +48,29 @@ $article_comments					= $params->get('article_comments');
 $article_hits						= $params->get('article_hits');
 $article_show_ratings				= $params->get('article_show_ratings');
 $article_animation					= $params->get('article_animation');
+
+if( ( $article_animation == 'cover-horizontal-push' ) || ( $article_animation == 'cover-vertical-push' ) )
+{
+	$article_animation 				= 'nssp2-slide';
+
+}
+else if ( $article_animation == 'cover-inplace-fade' )
+{
+	$article_animation 				= 'nssp2-slide nssp2-fade';
+} 
+else if ( $article_animation == 'cover-inplace' )
+{
+	$article_animation 				= 'nssp2-noeffect';
+}
+
+
 $article_slide_count				= $params->get('article_slide_count');
 $article_controllers_style			= $params->get('article_controllers_style', 'nssp2-default');
 $article_pagination					= $params->get('article_pagination');
 $article_arrows						= $params->get('article_arrows');
 $article_autoplay					= $params->get('article_autoplay');
-$article_play_button				= $params->get('article_play_button');
-$article_activator					= $params->get('article_activator');
-$article_animation_speed			= $params->get('article_animation_speed');
-$article_animation_interval			= $params->get('article_animation_interval');
-$article_animation_transition		= $params->get('article_animation_transition');
+$article_animation_interval			= ( $article_autoplay ) ? $params->get('article_animation_interval') : 'false';
+
 //Links Layout
 $links_block						= $params->get('links_block');
 $links_count						= $params->get('links_count');
@@ -78,22 +92,35 @@ $links_thumb_width					= $params->get('links_thumb_width');
 $links_thumb_height					= $params->get('links_thumb_height');
 $links_thumb_ratio					= $params->get('links_thumb_ratio');
 $links_animation					= $params->get('links_animation');
+
+if( ( $links_animation == 'cover-horizontal-push' ) || ( $links_animation == 'cover-vertical-push' ) )
+{
+	$links_animation 				= 'nssp2-slide';
+
+}
+else if ( $links_animation == 'cover-inplace-fade' )
+{
+	$links_animation 				= 'nssp2-slide nssp2-fade';
+} 
+else if ( $links_animation == 'cover-inplace' )
+{
+	$links_animation 				= 'nssp2-noeffect';
+}
+
 $links_slide_count					= $params->get('links_slide_count');
 $links_controllers_style			= $params->get('links_controllers_style', 'nssp2-default');
 $links_pagination					= $params->get('links_pagination');
 $links_arrows						= $params->get('links_arrows');
 $links_autoplay						= $params->get('links_autoplay');
-$links_play_button					= $params->get('links_play_button');
-$links_activator					= $params->get('links_activator');
-$links_animation_speed				= $params->get('links_animation_speed');
-$links_animation_interval			= $params->get('links_animation_interval');
-$links_animation_transition			= $params->get('links_animation_transition');
+$links_animation_interval			= ( $links_autoplay ) ? $params->get('links_animation_interval') : 'false';
 
 //Virtuemart
 $art_show_price 					= $params->get('art_show_price');
 $links_show_price 					= $params->get('links_show_price');
 $art_show_cart_button 				= $params->get('art_show_cart_button');
 $links_show_cart_button 			= $params->get('links_show_cart_button');
+
+JHtml::_('jquery.framework'); //jQuery
 	
 //Calculated count	
 if ($article_animation!="disabled") {
@@ -162,4 +189,4 @@ if(file_exists($cssFile)) {
 if ($article_animation!="disabled" || ($links_block && $c_links_count!=0 && $links_animation!="disabled")) {
 	$doc->addScript(JURI::base(true) . '/modules/mod_news_show_sp2/assets/js/nssp2.js');
 }
-require(JModuleHelper::getLayoutPath('mod_news_show_sp2'));
+require(JModuleHelper::getLayoutPath('mod_news_show_sp2', $layout));

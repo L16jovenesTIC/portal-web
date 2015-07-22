@@ -3,11 +3,11 @@
  */
 
 /* Move down content because we have a fixed navbar that is 50px tall */
-html,body { 
-  margin:0; 
-  padding:0; 
-  height:100%; 
-  width:100%; 
+html,body {
+  margin:0;
+  padding:0;
+  height:100%;
+  width:100%;
   text-align: center
 }
 
@@ -158,6 +158,10 @@ html {
 
 .modal-title {
     margin: 10px;
+}
+
+.nom-jug {
+  font-weight: 900;
 }
 
 @media (min-width: 768px) {

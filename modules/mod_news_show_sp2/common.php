@@ -1,18 +1,20 @@
 <?php
-/*------------------------------------------------------------------------
+/*
 # News Show SP2 - News display/Slider module by JoomShaper.com
-# ------------------------------------------------------------------------
 # Author    JoomShaper http://www.joomshaper.com
-# Copyright (C) 2010 - 2013 JoomShaper.com. All Rights Reserved.
-# @license - GNU/GPL V2 for PHP files. CSS / JS are Copyrighted Commercial
+# Copyright (C) 2010 - 2015 JoomShaper.com. All Rights Reserved.
+# @license - GNU/GPL V2 or later
 # Websites: http://www.joomshaper.com
--------------------------------------------------------------------------*/
+*/
+
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
 jimport('joomla.filter.output');
 jimport('joomla.filesystem.file');
 jimport('joomla.filesystem.folder');
+jimport('joomla.image.image.php');
+require_once dirname(__FILE__) . '/image.php';
 
 class modNSSP2CommonHelper {
 
@@ -24,17 +26,56 @@ class modNSSP2CommonHelper {
 			$text 				= $text;	
 		} else {
 			if ($type==1) {//character lmit
-				$text 			= JFilterOutput::cleanText($text);
-				$sep  			= (strlen($text)>$limit) ? '...' : '';
-				$text 			= utf8_substr($text,0,$limit) . $sep;		
+				$text 			= self::characterLimit($text, $limit, '...');
 			} else {//word limit
-				$text 			= JFilterOutput::cleanText($text);
-				$text 			= explode(' ',$text);
-				$sep 			= (count($text)>$limit) ? '...' : '';
-				$text			= implode(' ', array_slice($text,0,$limit)) . $sep;		
+				$text 			= self::wordLimit($text, $limit, '...');
 			}		
 		}
 		return $text;
+	}
+
+	// Word limit
+	public static function wordLimit($str, $limit = 100, $end_char = '&#8230;')
+	{
+		if (JString::trim($str) == '')
+			return $str;
+
+		// always strip tags for text
+		$str = strip_tags($str);
+
+		$find = array("/\r|\n/u", "/\t/u", "/\s\s+/u");
+		$replace = array(" ", " ", " ");
+		$str = preg_replace($find, $replace, $str);
+
+		preg_match('/\s*(?:\S*\s*){'.(int)$limit.'}/u', $str, $matches);
+		if (JString::strlen($matches[0]) == JString::strlen($str))
+			$end_char = '';
+		return JString::rtrim($matches[0]).$end_char;
+	}
+
+	// Character limit
+	public static function characterLimit($str, $limit = 150, $end_char = '...')
+	{
+		if (JString::trim($str) == '')
+			return $str;
+
+		// always strip tags for text
+		$str = strip_tags(JString::trim($str));
+
+		$find = array("/\r|\n/u", "/\t/u", "/\s\s+/u");
+		$replace = array(" ", " ", " ");
+		$str = preg_replace($find, $replace, $str);
+
+		if (JString::strlen($str) > $limit)
+		{
+			$str = JString::substr($str, 0, $limit);
+			return JString::rtrim($str).$end_char;
+		}
+		else
+		{
+			return $str;
+		}
+
 	}
 	
 	public static function thumb($image, $width, $height, $ratio=false, $uniqid) {
@@ -49,8 +90,8 @@ class modNSSP2CommonHelper {
 		
 		// remove any / that begins the path
 		$image = ltrim($image,'/');
-		//if (substr($image, 0 , 1) == '/') $image = substr($image, 1);
-		
+
+		$image = JPATH_ROOT . '/' . $image;
 		
 		//cache path
 		$thumb_dir = JPATH_CACHE.'/mod_news_show_sp2/nssp2_thumbs/'. $uniqid;
@@ -59,140 +100,46 @@ class modNSSP2CommonHelper {
 			JFolder::create($thumb_dir, 0755);
 		}
 
-		$file_name = JFile::stripExt(basename($image));
-		$file_ext = JFile::getExt($image);
-		$thumb_path = $thumb_dir . DIRECTORY_SEPARATOR . $file_name . '.' . $file_ext;
-		$thumb_url = basename(JPATH_CACHE) .'/mod_news_show_sp2/nssp2_thumbs/'. $uniqid. '/' . $file_name . '.' . $file_ext;
-		
+		$file_name 			= JFile::stripExt(basename($image));
+		$file_ext 			= JFile::getExt($image);
+		$thumb_file_name 	= $thumb_dir . '/' . $file_name . '.' . $file_ext;
+		$thumb_url 			= basename(JPATH_CACHE) .'/mod_news_show_sp2/nssp2_thumbs/'. $uniqid. '/' . $file_name . "_{$width}x{$height}." . $file_ext;
 
-		// check to see if this file exists, if so we don't need to create it
-		if (function_exists("gd_info")) {
-			
-			//Check existing thumbnails dimensions
-			if (file_exists($thumb_path)) {
-				$size = GetImageSize( $thumb_path );
-				$currentWidth=$size[0];
-				$currentHeight=$size[1];
-			}
-			
-			//Creating thumbnails		
-			if (!file_exists($thumb_path) || $currentWidth!=$width || $currentHeight!=$height ) {
-				self::crop($image, $width, $height, $ratio, $thumb_path);
-			}
+		//Creating thumbnails		
+		if ( file_exists($image) ) {
+			self::crop($image, $width, $height, $ratio, $thumb_dir, $thumb_file_name);
 		}
+
+
 			
 		return $thumb_url;	
 	}
-	
-	private static function crop($image_to_resize, $new_width, $new_height, $ratio, $path)
+
+	private static function crop($image_to_resize, $width, $height, $ratio, $thumbs_path, $thumb_file)
 	{
-		if( !file_exists( $image_to_resize ) )
-		{
-			exit( "File " . $image_to_resize . " does not exist." );
-		}
 		
-		$info = GetImageSize( $image_to_resize );
+		$sizes = array("{$width}x{$height}");
+
+		$image = new modNSSP2ImageHelper( $image_to_resize );
+		//$output = $image->createThumbs($sizes, 1, $thumbs_path);
 		
-		if( empty( $info ) )
+		if( file_exists( $thumb_file ) )
 		{
-			exit( "The file " . $image_to_resize . " doesn't seem to be an image." );
-		}
-		
-		$width = $info[ 0 ];
-		$height = $info[ 1 ];
-		$mime = $info[ 'mime' ];/* Keep Aspect Ratio? */
-		if( $ratio )
-		{
-			$thumb = ( $new_width < $width && $new_height < $height ) ? true : false;// Thumbnail
-			$bigger_image = ( $new_width > $width || $new_height > $height ) ? true : false;// Bigger Image
-			if( $thumb )
+			$imageProperties = modNSSP2ImageHelper::getImageFileProperties( $thumb_file );
+
+			if( $imageProperties->width != $width || $imageProperties->height != $height )
 			{
-				
-				if( $new_width >= $new_height )
-				{
-					$x = ( $width / $new_width );
-					$new_height = ( $height / $x );
-				}
-				elseif( $new_height >= $new_width )
-				{
-					$x = ( $height / $new_height );
-					$new_width = ( $width / $x );
-				}
+				//$image = new JImage( $image_to_resize );
+				$output = $image->createThumbs($sizes, 1, $thumbs_path);
 			}
-			elseif( $bigger_image )
-			{
-				
-				if( $new_width >= $width )
-				{
-					$x = ( $new_width / $width );
-					$new_height = ( $height * $x );
-				}
-				elseif( $new_height >= $height )
-				{
-					$x = ( $new_height / $height );
-					$new_width = ( $width * $x );
-				}
-			}
-		}// What sort of image?
-		$type = substr( strrchr( $mime, '/' ), 1 );
-		
-		switch( $type )
-		{
-		case 'jpeg':
-			$image_create_func = 'ImageCreateFromJPEG';
-			$image_save_func = 'ImageJPEG';
-			$new_image_ext = 'jpg';
-			break;
-		case 'png':
-			$image_create_func = 'ImageCreateFromPNG';
-			$image_save_func = 'ImagePNG';
-			$new_image_ext = 'png';
-			break;
-		case 'bmp':
-			$image_create_func = 'ImageCreateFromBMP';
-			$image_save_func = 'ImageBMP';
-			$new_image_ext = 'bmp';
-			break;
-		case 'gif':
-			$image_create_func = 'ImageCreateFromGIF';
-			$image_save_func = 'ImageGIF';
-			$new_image_ext = 'gif';
-			break;
-		case 'vnd.wap.wbmp':
-			$image_create_func = 'ImageCreateFromWBMP';
-			$image_save_func = 'ImageWBMP';
-			$new_image_ext = 'bmp';
-			break;
-		case 'xbm':
-			$image_create_func = 'ImageCreateFromXBM';
-			$image_save_func = 'ImageXBM';
-			$new_image_ext = 'xbm';
-			break;
-			default: $image_create_func = 'ImageCreateFromJPEG';
-			$image_save_func = 'ImageJPEG';
-			$new_image_ext = 'jpg';
-		}// New Image
-		
-		$image_c = ImageCreateTrueColor( $new_width, $new_height );
-		
-		if ($type=='png') {
-			imagealphablending($image_c, false);
-			imagesavealpha($image_c, true);
+
+		} else {
+			//$image = new JImage( $image_to_resize );
+			$output = $image->createThumbs($sizes, 1, $thumbs_path);
 		}
-		$new_image = $image_create_func( $image_to_resize );
-		if ($type=='png') {
-			imagealphablending($new_image, true);
-		}
-		ImageCopyResampled( $image_c, $new_image, 0, 0, 0, 0, $new_width, $new_height, $width, $height );
-		
-		$process = $image_save_func( $image_c, $path );
-		return array( 'result' => $process, 'new_file_path' => $path );
+
+		return true;
+
 	}
-	
-	public static function numeric2lang ($number) {
-		$number = str_split($number);
-		$formated = '';
-		foreach($number as $no) $formated.=JText::_('NSSP2_' . $no);
-		return $formated;
-	}	
+		
 }

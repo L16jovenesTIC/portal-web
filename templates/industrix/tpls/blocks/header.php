@@ -24,7 +24,7 @@ if (!$sitename) {
 	<div class="container">
 
 		<div class="row">
-			<div class="col-md-3 col-sm-4">
+			<div class="col-md-6 col-sm-6">
 			<!-- LOGO -->
 			<div class="logo logo-<?php echo $logotype ?>">
 			<a href="<?php echo JURI::base(true) ?>" title="<?php echo strip_tags($sitename) ?>">
@@ -37,7 +37,7 @@ if (!$sitename) {
 			<!-- //LOGO -->	
 			</div>
 
-			<div class="col-md-9 col-sm-8  hidden-xs">
+			<div class="col-md-6 col-sm-6  hidden-xs">
 
 			    <?php if ($this->countModules('th-login')) : ?>
 			    <!-- HEAD LOGIN -->

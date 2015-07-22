@@ -1,12 +1,11 @@
 <?php
-/*------------------------------------------------------------------------
+/*
 # News Show SP2 - News display/Slider module by JoomShaper.com
-# ------------------------------------------------------------------------
 # Author    JoomShaper http://www.joomshaper.com
-# Copyright (C) 2010 - 2013 JoomShaper.com. All Rights Reserved.
-# @license - GNU/GPL V2 for PHP files. CSS / JS are Copyrighted Commercial
+# Copyright (C) 2010 - 2015 JoomShaper.com. All Rights Reserved.
+# @license - GNU/GPL V2 or later
 # Websites: http://www.joomshaper.com
--------------------------------------------------------------------------*/
+*/
 
 // no direct access
 defined('_JEXEC') or die('Restricted access');
@@ -96,7 +95,7 @@ abstract class modNSSP2JHelper
 		$model->setState('list.ordering', $ordering);
 		$model->setState('list.direction', $ordering_direction);
 
-		$items = $model->getItems();
+		$items 				= $model->getItems();
 		
 		foreach ($items as &$item) {
 			$item->slug 		= $item->id.':'.$item->alias;
@@ -111,11 +110,16 @@ abstract class modNSSP2JHelper
 			$item->title 		= htmlspecialchars($item->title);
 			$item->introtext 	= JHtml::_('content.prepare', $item->introtext);
 			$item->link 		= JRoute::_(ContentHelperRoute::getArticleRoute($item->slug, $item->catslug));
-			if (JPluginHelper::isEnabled('content', 'spcomments')) {
+
+			if (JPluginHelper::isEnabled('content', 'spcomments'))
+			{
 				$item->comment 	= self::getComment($item->link, $item->catid, $plgParams);
-			} else {
+			} 
+			else
+			{
 				$item->comment 	= '<a class="ns2-comments" href="#">0 Comment</a>';
 			}
+			
 			$item->rating 		= ($item->rating) ? number_format(intval($item->rating)/intval($item->rating_count), 2)*20 : 0;
 		}	
 		return $items;

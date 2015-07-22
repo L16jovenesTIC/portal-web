@@ -106,7 +106,7 @@
 .client-logo .sprocket-strips-content a span{
 	display: none;
 }
-.client-logo .sprocket-strips-item {height: 60px; position: relative;}
+.client-logo .sprocket-strips-item {height: 100px; position: relative;}
 .sprocket-strips-pagination li {background: #000;color: #fff;box-shadow: 1px 1px 1px rgba(255,255,255,0.5);}
 .sprocket-strips-arrows .arrow {}
 

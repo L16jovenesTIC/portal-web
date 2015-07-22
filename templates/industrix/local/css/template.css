@@ -2577,7 +2577,7 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 
 .th-header-top {
-  padding: 40px 0 20px;
+  padding: 40px 0 5px;
 }
 .logo {
   padding: 0;

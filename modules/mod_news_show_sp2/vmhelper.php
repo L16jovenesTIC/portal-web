@@ -1,26 +1,38 @@
 <?php
-/*------------------------------------------------------------------------
+/*
 # News Show SP2 - News display/Slider module by JoomShaper.com
-# ------------------------------------------------------------------------
 # Author    JoomShaper http://www.joomshaper.com
-# Copyright (C) 2010 - 2013 JoomShaper.com. All Rights Reserved.
-# @license - GNU/GPL V2 for PHP files. CSS / JS are Copyrighted Commercial
+# Copyright (C) 2010 - 2015 JoomShaper.com. All Rights Reserved.
+# @license - GNU/GPL V2 or later
 # Websites: http://www.joomshaper.com
--------------------------------------------------------------------------*/
+*/
 
-// no direct access
-defined('_JEXEC') or die('Restricted access');
-if (!class_exists( 'VmConfig' )) require(JPATH_ADMINISTRATOR . '/components/com_virtuemart/helpers/config.php');
-VmConfig::loadConfig();
+if (!class_exists( 'VmConfig' )) require(JPATH_ROOT.'/administrator/components/com_virtuemart/helpers/config.php');
+
+VmConfig::loadConfig ();
+
 // Load the language file of com_virtuemart.
-JFactory::getLanguage()->load('com_virtuemart');
-if (!class_exists( 'calculationHelper' )) require(JPATH_ADMINISTRATOR .'/components/com_virtuemart/helpers/calculationh.php');
-if (!class_exists( 'CurrencyDisplay' )) require(JPATH_ADMINISTRATOR . '/components/com_virtuemart/helpers/currencydisplay.php');
-if (!class_exists( 'VirtueMartModelVendor' )) require(JPATH_ADMINISTRATOR . '/components/com_virtuemart/models/vendor.php');
-if (!class_exists( 'shopFunctionsF' )) require(JPATH_SITE.'/components/com_virtuemart/helpers/shopfunctionsf.php');
-if (!class_exists( 'calculationHelper' )) require(JPATH_COMPONENT_SITE.'/helpers/cart.php');
-if (!class_exists( 'VirtueMartModelProduct' )){
-   JLoader::import( 'product', JPATH_ADMINISTRATOR . '/components/com_virtuemart/models' );
+VmConfig::loadJLang('com_virtuemart',true);
+if (!class_exists ('calculationHelper')) {
+	require(JPATH_ADMINISTRATOR . '/components/com_virtuemart/helpers/calculationh.php');
+}
+if (!class_exists ('CurrencyDisplay')) {
+	require(JPATH_ADMINISTRATOR . '/components/com_virtuemart/helpers/currencydisplay.php');
+}
+if (!class_exists ('VirtueMartModelVendor')) {
+	require(JPATH_ADMINISTRATOR . '/components/com_virtuemart/models/vendor.php');
+}
+if (!class_exists ('VmImage')) {
+	require(JPATH_ADMINISTRATOR . '/components/com_virtuemart/helpers/image.php');
+}
+if (!class_exists ('shopFunctionsF')) {
+	require(JPATH_SITE . '/components/com_virtuemart/helpers/shopfunctionsf.php');
+}
+if (!class_exists ('calculationHelper')) {
+	require(JPATH_COMPONENT_SITE . '/helpers/cart.php');
+}
+if (!class_exists ('VirtueMartModelProduct')) {
+	JLoader::import ('product', JPATH_ADMINISTRATOR . '/components/com_virtuemart/' . DS . 'models');
 }
 
 if (!class_exists( 'VmModel' )) require(JPATH_ADMINISTRATOR.'/components/com_virtuemart/helpers/vmmodel.php');
@@ -38,10 +50,10 @@ abstract class modNSSP2VMHelper {
 			
 			if (count($products)) {
 				foreach ($products as $item) {
-					$author 			= &JFactory::getUser($item->created_by);
+					$author 			= JFactory::getUser($item->created_by);
 					$item->created 		= $item->created_on;
 					$item->author 		= $author->name;
-					$item->hits 		= $item->hits;
+					$item->hits 		= @$item->hits;
 					$item->category 	= $item->category_name;
 					$item->cat_link 	= JRoute::_('index.php?option=com_virtuemart&view=category&virtuemart_category_id='. $item->virtuemart_category_id);
 					$item->image 		= $item->images[0]->file_url;
@@ -61,7 +73,7 @@ abstract class modNSSP2VMHelper {
 	private static function addtocart($product) {
 		$output = '';
 		ob_start();
-        if (!VmConfig::get('use_as_catalog',0)) { ?>
+        if (!VmConfig::get ('use_as_catalog', 0)) {	?>
                 <div class="ns2-addtocart">
 
 				<form method="post" class="product" action="index.php">
